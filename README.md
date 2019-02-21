@@ -1,2 +1,6 @@
-# piano_jazz_transcriptions
-Piano jazz solo transcriptions 
+# Piano jazz solo transcriptions
+
+Oscar Peterson - Take the "A" train
+
+Upcoming: 
+Bill Evans - Nardis
