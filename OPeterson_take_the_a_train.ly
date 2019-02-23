@@ -52,13 +52,13 @@ lower = \relative c {
   r4  r8 < c' f > r2  | < b f' >4 r r8 q r < b c e > | 
     r2 r8 < g cis f >~ q4 | < fis c' e >2 \tuplet 3/2 { r4 < f b e >8 } \tuplet 3/2 { r4 < b c e >8 } |
   r2 r8 < b c e > r q | r2 r8 q r < fis a c e > | r q r2 r8 q | r4 r8 q r4 r8 < a c f > | 
-  r2 r8 q r q | r2 r8 < a b f' > \tuplet 3/2 { r4 < b c e >8 }  |  r2 r8 < g cis' f > r < fis c' e > | r4  r8 < f b ees > r4 r8 < e a d > |
+  r2 r8 q r q | r2 r8 < a b f' > \tuplet 3/2 { r4 < b c e >8 }  |  r4 r8 < g cis f > r4 r8 < fis c' e > | r4  r8 < f b ees > r4 r8 < e a d > |
   r4 r8 < b' c e > r4 r8 < b c e g > | r2 r8 \acciaccatura fis g r < fis a c e > | 
     r2 q8 r8 r4 | q8 r8 r8 q r4 r8 < c' f a > |
   r q r4 r8 q r < b f' > | r2 r8 q r < b c e> | r2. r8 \acciaccatura fis g | g2-- r8 < e f a > r q | 
   r2 r8 \acciaccatura b c-- r4 | q8 r8 r8 \acciaccatura b c-- r4 r8 < f bes > |
     r2. r8 < e f > | r q r4 r8 q r < fis a c > | 
-    r q r4 r8 q r4 | r4 r8 q r4 r8 < f a b > | r4 r8 < b f' g > r \acciaccatura fis8 g r \acciaccatura fis, g | r1 \bar "||" 
+  r q r4 r8 q r4 | r4 r8 q r4 r8 < f a b > | r4 r8 < b f' g > r \acciaccatura fis8 g r \acciaccatura fis, g | r1 \bar "||" 
 
 }
 
