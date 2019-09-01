@@ -5,7 +5,7 @@ Scores are in *pdf* repository. Transcriptions made by myself with lilypond - th
 * Oscar Peterson - Take the "A" train (whole piano solo)
 https://www.youtube.com/watch?v=_7WCzeylk08
 
-Upcoming: 
+Work in progress: 
 * Bill Evans - Nardis
 https://www.youtube.com/watch?v=oxzeDpBvxv4
 * Kenny Barron Trio - Light Blue (part of the solo starting at 1:53)
