@@ -39,7 +39,7 @@ lower = \relative c, {
   c, r < c' e > r | a r < c e > r |
   d, r < f' c' > r8 aes, | g b d f e4 ges,--( |
   f4) r < e' a > r | g,-. b'( f-.) ges,( |
-  f) r < e' a > r4 | < f, c' > r \tuplet 3/2 { < aes des >4  < des, aes > r } |
+  f) r < e' a > r4 | < f, c' > r \tuplet 3/2 { < aes des >4  < des, aes' > r } |
   < c g'>
 }
 
