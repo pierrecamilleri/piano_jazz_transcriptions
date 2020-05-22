@@ -32,10 +32,15 @@ upper = \relative c'' {
     r4 \tuplet 3/2 {bes'8 bes bes } b ges~ ges f16 ees | bes'4 r2 \tuplet 3/2 { r8 bes aes } |
     a4 b,16 d e a c f, des < b c > f des < b' c >8 | a 4 a8 a a4  r8 a |
     bes8 bes bes bes bes4 g16 a bes b | c2 r2 |
+    d4. d'16 ees c4. ees,8 | d8 c' c d16 bes des,4. bes8 |
+    c16 ees fis g ees'8 bes16 gis a8 f'4. |
+    \tuplet 3/2 { aes16 f ees } c aes~ aes f ees8 g d des c |
+    b aes f' g ees4 \tuplet 3/2 { fis8 a bes } | c4 c8 c a2 |
+    r2 \tuplet 6/4 { r8 bes,16 c ees g } \tuplet 3/2 { d'8 d f, } | bes1
   }
   \new Voice
-  {
-    \voiceTwo r2 < ees, ges > | < d a' > < a' des > |
+  \relative c' {
+    \voiceTwo r2 < ees ges > | < d a' > < a' des > |
     ees ees | g < g, a c >4 < aes b des > |
     < aes b d >2  \autoBeamOff g8 \autoBeamOn ges a bes | c d c c bes4 r |
     bes2  r4 < c ees g >4 | bes4 < fis gis d' > < ees g d' > < ges a b > |
@@ -64,9 +69,14 @@ lower = \relative c {
   < g f' >4 < b' d f > c,, < g'' c ees > | g fis' f e |
   < c, ees' > < bes' ees g > f, < a' ees' f> | \autoBeamOff bes,,8 \autoBeamOn f'''16 des d bes f des d bes r bes~ bes4 |  \break
   f2 bes, | ees2 ees4 < bes'' ees g> |
-  f,4 < aes' ees'> < bes, aes'>  < d' aes' >  | ees,,4 < bes'' ees g > bes,, <bes'' ees g> |
+  f,4 < aes' ees'> < bes, aes'>  < d' aes' >  | ees,,4 < bes'' ees g > bes,, <bes'' ees g> | \break
   < e,, d' >4 < g' d' > < a, g' > cis' | d,,4 < cis'' e >8 < c ees > < b d >4 d,, |
-  g4 ges' f e | < f, ees' >4 < bes' ees g > f,2 |
+  g4 ges' f e | < f, ees' >4 < bes' ees g > f,2 | \break
+  c'4 < bes' ees g > f, < ees'' ges a > | bes,, < ees'' g bes > c,, < g'' bes e > |
+  < c,  bes' >  < bes' ees g > f, < a' c f > | d,,2 ees4 < bes'' f' > | \break
+  g, < d'' f b > c, < ees' g a > | g,,8 fis' f g, e'4 c, |
+  c < bes'' ees g > f, < a' ees' f > | bes,, < bes'' d f > bes,, q | \break
+
 
 }
 
