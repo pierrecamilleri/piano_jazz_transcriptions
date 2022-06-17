@@ -1,12 +1,12 @@
 \version "2.18.2"
 \header {
-  title = "Take the \"A\" train"
-  composer = "Oscar Peterson"
+  title = "But not for me"
+  composer = "Chet Baker"
   piece = "Swing"
 }
 harmony = \chords {
   \set minorChordModifier = \markup { "-" }
-  s1 | s1 |
+  s1 | 
   c1:6 | s1 | d:5-.7 | s | d:m7 | g:7 | c:6 |  d2:m7 g:7 |
   c1:6 | s1 | d:5-.7 | s | d:m7 | g:7 | c:6 |  d2:m7 g:7 |
   f1:7+| s1 | s     | s | d:5-.7| s   | d:m7|  g2:7 g:7.9- |
@@ -23,9 +23,9 @@ upper = \relative c'' {
   \key c \major
   \time 4/4
 
-  r2 g8 c e f | e c g a c4 a8 c \bar "||"
+  r2 g8 c e f \bar "||"
   d
-  \mark \markup { \italic { Solo 1 } }
+  \mark \markup { \italic { Theme } }
   c a4 c2   | r2. a8 c | d c aes4 c2 | r2. a8 c |
   d c a4 c2   | r4 r8 dis e4 c | g1 | r8 a( c) d( ees) d( ees) d( |
   ees4) a,8 c-3 d ees d c | bes g a g r a c dis | e1 | b'8 a b a e c a4 |
@@ -53,40 +53,11 @@ upper = \relative c'' {
 
 }
 
-lower = \relative c {
-  \clef bass
-  \key c \major
-  \time 4/4
-
-  r8 g8~ g2.~ | g2. r4 \bar "||"
-  r1 | < g' a c e >8 r8 r8 q8 r2 | r2 < fis a c e >8 r8 r4 | q8 r r q r q r q |
-  r1 | < b f' a >8 r r2. |  r2 < g cis f > | < fis c' e > r8 < f b e > r4 \bar "||" \break
-  r8 < e a d > r4 r8 < b' c e > r q | r2 r8 q r q | r2 < fis a c e >8 r r q | r2 r8 q r q |
-  r4 r8 < f a c e > r4 r8 q | r < a b f' > r2 r8 < b c e >8 | r1 | < fis bes c ees >4 r8 < f a c d > r2 \bar "||" \break
-  r4 r8. < g bes des >16 r4 r8. < g a c >16 | r4 r8. < g bes des >16 r2 | r8 q r4 r2 | r8 < a c e > r4 q \tuplet 3/2 { r4 < fis a c e >8 } |
-  r2 r8 q r q | r2 r8 q r4 | r8 < f b ees > r4 r8 q r q | r2 r8 q r q \bar "||"  \break
-  r4 r8 < b c e > r4 r8 < a c e > | r1 | r4 r8 < fis a c e > r4 r8 q  | r2 r8 q r < f a c e > |
-  r4  r8 < a c f > r2  | < a b f' >4 r r8 q r < b c e > |
-    r2 r8 < g cis f >~ q4 | < fis c' e >2 \tuplet 3/2 { r4 < f b e >8 } \tuplet 3/2 { r4 < b c e >8 } \bar "||"  \break
-
-  %Solo 2
-  \acciaccatura s8 r2 r8 < b c e > r q | r2 r8 q r < fis a c e > | r q r2 r8 q | r4 r8 q r4 r8 < f a c e > |
-  r2 r8 < a c f > r q | r2 r8 < a b f' > \tuplet 3/2 { r4 < b c e >8 }  |  r4 r8 < g cis f > r4 r8 < fis c' e > | r4  r8 < f b ees > r4 r8 < e a d > \bar "||"  \break
-  r4 r8 < b' c e > r4 r8 < b c e g > | r2 r8 \acciaccatura fis g r < fis a c e > |
-    r2 q8 r8 r4 | q8 r8 r8 q r4 r8 < c' f a > |
-  r q r4 r8 q r < b f' > | r2 r8 q r < b c e> | r2. r8 \acciaccatura fis g | g2-- r8 < e f a > r q \bar "||"  \break
-  r2 r8 \acciaccatura b c-- r4 | < c d a' >8 r8 r8 \acciaccatura b c-- r4 r8 < f bes > |
-    r2. r8 < e f a > | r q r4 r8 q r < fis a c > | \break
-  r q r4 r8 q r4 | r4 r8 q r4 r8 < f a b > | r4 r8 < b f' g > r \acciaccatura fis8 g r \acciaccatura fis g | r1 \bar "||"
-
-}
-
 \score {
 
   \new PianoStaff <<
     \harmony
     \new Staff = "upper" \upper
-    \new Staff = "lower" \lower
   >>
   \layout { }
   \midi { }

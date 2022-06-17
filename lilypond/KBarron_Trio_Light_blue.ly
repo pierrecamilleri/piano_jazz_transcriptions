@@ -61,5 +61,4 @@ lower = \relative c, {
     \new Staff = "lower" \lower
   >>
   \layout { }
-  \midi { }
 }
