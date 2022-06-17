@@ -3,12 +3,44 @@
   title = "Light Blue"
   composer = "Kenny Barron Trio"
 }
-upper = \relative c'' {
+upper = \relative c' {
   \tempo 4 = 140
   \clef treble
   \key c \major
   \time 4/4
-  r2. r8 gis \bar "||"
+
+  % Theme repeated 4 times with variations
+
+  \partial 8 ees8 | e8 b' a e < b a >4 \autoBeamOff < bes aes >8\fermata ees8 \autoBeamOn |
+  e8 b' a e < a, g > 4 < aes f >4\fermata |
+  \acciaccatura { bes16 aes ges } g2 < c b' >2~ |
+  < c b' >4 a'8 g e c a g |
+  fis e' c a fis f < b~ cis~ >4 |
+  < b~ cis~ >4 r2 ees4 |
+
+  e8 b' a e < b a >4 \autoBeamOff < bes aes >8\fermata ees8 \autoBeamOn |
+  e8 b' a e < a, g > 4 < aes f >4\fermata |
+  \acciaccatura { bes16 aes ges } g2 < c b' >2~ |
+  < c b' >4 a'8 g e c a g |
+  fis e' c a fis f < b~ cis~ >4 |
+  < b~ cis~ >4 r2 ees4 |
+
+  e8 b' a e < b a >4 \autoBeamOff < bes aes >8\fermata ees8 \autoBeamOn |
+  e8 b' a e < a, g > 4 < aes f >4\fermata |
+  \acciaccatura { bes16 aes ges } g2 < c b' >2~ |
+  < c b' >4 a'8 g e c a g |
+  fis e' c a fis f < b~ cis~ >4 |
+  < b~ cis~ >4 r2 ees4 |
+
+  e8 b' a e < b a >4 \autoBeamOff < bes aes >8\fermata ees8 \autoBeamOn |
+  e8 b' a e < a, g > 4 < aes f >4\fermata |
+  \acciaccatura { bes16 aes ges } g2 < c b' >2~ |
+  < c b' >4 a'8 g e c a g |
+  fis e' c a fis f < b~ cis~ >4 |
+  < b~ cis~ >4 r2 r8 gis' \bar "||"
+
+  % Improvisation second part
+
   a4 r4 r4  \tuplet 2/2 { e'8-> c-. } | e-> cis a e gis e-. c'-- bes-- |
   a4 e8 c g' f d c | d aes~ aes4 r8 g g' f |
   e4 g, r \tuplet 2/2 {a8-- b--} | c4 e8 c b' gis a b |
@@ -35,7 +67,39 @@ lower = \relative c, {
   \key c \major
   \time 4/4
 
-  r1 \bar "||"
+  % Theme repeated 4 times with variations
+
+  \partial 8 r8 | < f c' a' >2 < g d' >4 < c, e'>\fermata |
+  f8 c' a'~ 8 < f, e' >4 < bes, d' >  |
+  c4 g' e'2. |
+  a8, <e' c'>8~ < e c'>2 |
+  r8 < d, a' fis' >4. r2  |
+  r4 g4-- g2-- | \break
+
+< f c' a' >2 < g d' >4 < c, e'>\fermata |
+  f8 c' a'~ 8 < f, e' >4 < bes, d' >  |
+  c4 g' e'2. |
+  a8, <e' c'>8~ < e c'>2 |
+  r8 < d, a' fis' >4. r2  |
+   r4 g4-- g2-- | \break
+
+  < f c' a' >2 < g d' >4 < c, e'>\fermata |
+  f8 c' a'~ 8 < f, e' >4 < bes, d' >  |
+  c4 g' e'2. |
+  a8, <e' c'>8~ < e c'>2 |
+  r8 < d, a' fis' >4. r2  |
+  r4 g4-- g2-- | \break
+
+< f c' a' >2 < g d' >4 < c, e'>\fermata |
+  f8 c' a'~ 8 < f, e' >4 < bes, d' >  |
+  c4 g' e'2. |
+  a8, <e' c'>8~ < e c'>2 |
+  r8 < d, a' fis' >4. r2  |
+   r4 g4-- g2-- \bar "||"
+ \break
+
+   % Improvisation second part
+
   f4 r < e' a > r | g,-. b'( f-.) ges,( |
   f) r < e' a > r8 d |  aes4 r < des, aes' > r |  \break
   < c g' > r < c' e > r | a r < c e > r |
