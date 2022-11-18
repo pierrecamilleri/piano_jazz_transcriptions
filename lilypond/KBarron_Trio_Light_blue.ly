@@ -4,7 +4,7 @@
   composer = "Kenny Barron Trio"
 }
 upper = \relative c' {
-  \tempo 4 = 140
+  \tempo 2 = 70
   \clef treble
   \key c \major
   \time 4/4
@@ -72,28 +72,28 @@ lower = \relative c, {
   \partial 8 r8 | < f c' a' >2 < g d' >4 < c, e'>\fermata |
   f8 c' a'~ 8 < f, e' >4 < bes, d' >  |
   c4 g' e'2. |
-  a8, <e' c'>8~ < e c'>2 |
+  a,8 <e' c'>8~ < e c'>2 |
   r8 < d, a' fis' >4. r2  |
   r4 g4-- g2-- | \break
 
 < f c' a' >2 < g d' >4 < c, e'>\fermata |
   f8 c' a'~ 8 < f, e' >4 < bes, d' >  |
   c4 g' e'2. |
-  a8, <e' c'>8~ < e c'>2 |
+  a,8 <e' c'>8~ < e c'>2 |
   r8 < d, a' fis' >4. r2  |
    r4 g4-- g2-- | \break
 
   < f c' a' >2 < g d' >4 < c, e'>\fermata |
   f8 c' a'~ 8 < f, e' >4 < bes, d' >  |
   c4 g' e'2. |
-  a8, <e' c'>8~ < e c'>2 |
+  a,8 <e' c'>8~ < e c'>2 |
   r8 < d, a' fis' >4. r2  |
   r4 g4-- g2-- | \break
 
 < f c' a' >2 < g d' >4 < c, e'>\fermata |
   f8 c' a'~ 8 < f, e' >4 < bes, d' >  |
   c4 g' e'2. |
-  a8, <e' c'>8~ < e c'>2 |
+  a,8 <e' c'>8~ < e c'>2 |
   r8 < d, a' fis' >4. r2  |
    r4 g4-- g2-- \bar "||"
  \break
