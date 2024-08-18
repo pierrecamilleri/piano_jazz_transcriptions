@@ -2,7 +2,11 @@
 \header {
   title = "Light Blue"
   composer = "Kenny Barron Trio"
-  tagline = "Score transcribed by Pierre Camilleri"
+  tagline = \markup {
+    \with-url #"https://github.com/pierrecamilleri/piano_jazz_transcriptions" {
+      "Score transcribed by Pierre Camilleri"
+    }
+  }
 }
 upper = \relative c' {
   \tempo 2 = 70
