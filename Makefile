@@ -4,5 +4,5 @@ SHELL=/bin/bash
 
 all: pdf/*.pdf
 
-pdf/*.pdf: lilypond/*.ly
+pdf/%.pdf: lilypond/%.ly
 	@ lilypond -s -o ./pdf $<
