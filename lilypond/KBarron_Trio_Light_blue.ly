@@ -57,11 +57,22 @@ upper = \relative c' {
   \tuplet 3/2 { b4 g'8 } \tuplet 3/2 { des8 b f } \tuplet 3/2 { aes8 f ees' } \tuplet 3/2 {r8. bes16 aes e } |
   d'4. c8 a e c a | ees' a, d des \tuplet 3/2 { c4 aes ges } |
   g4  r r \tuplet 2/2 { a8 b8 } | c4 e8 c b' gis a b |
-  c d ees e \tuplet 3/2 { r4 < b b' > < a a' > } | < c c' > r r < cis cis' > |
-  < d d' > c'8 a  \tuplet 3/2 { e4 c b~ } | b8 f'4 bes,8~ bes4. gis8 |
+  c d ees e \tuplet 3/2 { r4 < b b' > < a a' > } | < c c' > r r < des des' > |
+  < d d' > c'8 a  \tuplet 3/2 { e4 c b~ } | b8 f'4 \acciaccatura { des16 c b } bes8~ bes4. gis8 |
   a8 e' c a d c a e | c' gis e c bes4 aes8 ges |
+
   g4 a8 b c4 d8 ees | e4 b'8 gis \tuplet 3/2 { a4 e'8 } \tuplet 3/2 { c8 a e } |
   b'8 e, d' b c a e c | g' < b, cis >~ q4 r r8 gis' |
+
+  a gis a gis a f c b | b4 < b gis' >8 < bes g'>~ q4. gis'8 |
+  a gis a gis a e c a | e'2 \acciaccatura { c16 b bes a } gis4. fis8 |
+
+  g2. g8 gis | a b c d e g b d |
+  c e, gis b  a e c b | g' < b, cis >~ q4 r4 r8 aes' |
+
+  a4 e' d8 c a f | c2  b2
+
+
 
 }
 
@@ -124,12 +135,24 @@ lower = \relative c, {
   g,-. b'( f-.) ges,( |
   f) r < e' a > r4 |
   < f, c' > r  < aes des >4  < des, aes' >  | \break
+
   < c g'> r < c' e > r | a r < e' c' > r |
-  d,  r < fis' c' > r | < g, f' > r < e' bes' > r | \break
-  r1 | r |
+  < d c' >  r < fis c' e > r | < des c' > r < f b ees > r | \break
+
+  < c a' > r < bes' e g > r | r1 |
   r  | r | \break
+
   < c, g' >4 r < c' e > r | a r < e' c' > r |
   < fis c' > r q r | g, f' e ges, | \break
+
+  r1 | r1 |
+  r1 | r1 | \break
+
+  r1 | r1 |
+  r1 | r1 | \break
+
+  r1 | r1 |
+  r1 | r1 | \break
 
 }
 
