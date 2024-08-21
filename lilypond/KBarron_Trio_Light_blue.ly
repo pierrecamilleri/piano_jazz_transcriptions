@@ -8,7 +8,8 @@
     }
   }
 }
-upper = \relative c' {
+
+RHThemeA = \relative c' {
   \tempo 2 = 70
   \clef treble
   \key c \major
@@ -39,6 +40,43 @@ upper = \relative c' {
     { < b~ cis~ >4 r2 ees4 | }
     { < b~ cis~ >4 r2 r8 gis' \bar "|."}
   }
+}
+
+LHThemeA = \relative c, {
+  \clef bass
+  \key c \major
+  \time 4/4
+
+  % Theme repeated 4 times with variations
+  \repeat volta 2 {
+    \partial 4 r4 | < f c' a' >1 |
+    < g f' >4 < c, e'>2 r4 |
+    f4 c' a'~ 4  |
+    < f, e' >4 < bes, d' >2 r4  | \break
+
+    c4 g' e'2 |
+    a,8 <e' c'>8~ < e c'>2. |
+    r8 < d, a' fis' >4. r2  |
+    r4 g4-- g2-- | \break
+
+    < f c' a' >1|
+    < f dis' >4 < ges e'>2. |
+    < f c' a' >1 |
+    < ges e' >4 < f dis' >2 r4  | \break
+
+    c4 g' e'4. e8 |
+    a,8 e' g2 r4 |
+     < d, a' >2 r2  |
+ }
+ \alternative {
+   { r4 g4-- g2-- | }
+   { \tuplet 3/2 {r4 < cis, gis >4 q4} q2-- | }
+ }
+ \break
+
+}
+
+RHImpro = \relative c'' {
 
   % Improvisation second part
   \mark \markup { \small { Solo second part (01:53) } }
@@ -107,39 +145,10 @@ upper = \relative c' {
    < b~ cis~ >4 r2. \bar "|."
 }
 
-lower = \relative c, {
-  \clef bass
-  \key c \major
-  \time 4/4
-
-  % Theme repeated 4 times with variations
-  \repeat volta 2 {
-    \partial 4 r4 | < f c' a' >1 |
-    < g f' >4 < c, e'>2 r4 |
-    f4 c' a'~ 4  |
-    < f, e' >4 < bes, d' >2 r4  | \break
-
-    c4 g' e'2 |
-    a,8 <e' c'>8~ < e c'>2. |
-    r8 < d, a' fis' >4. r2  |
-    r4 g4-- g2-- | \break
-
-    < f c' a' >1|
-    < f dis' >4 < ges e'>2. |
-    < f c' a' >1 |
-    < ges e' >4 < f dis' >2 r4  | \break
-
-    c4 g' e'4. e8 |
-    a,8 e' g2 r4 |
-     < d, a' >2 r2  |
- }
- \alternative {
-   { r4 g4-- g2-- | }
-   { \tuplet 3/2 {r4 < cis, gis >4 q4} q2-- | }
- }
- \break
 
    % Improvisation second part
+
+LHImpro = \relative c, {
 
   f4 r < e' a > r |
   g,-. b'( f-.) ges,( |
@@ -222,8 +231,8 @@ lower = \relative c, {
 
 \score {
   \new PianoStaff <<
-    \new Staff = "upper" \upper
-    \new Staff = "lower" \lower
+    \new Staff = "upper" { \RHThemeA \RHImpro }
+    \new Staff = "lower" { \LHThemeA \LHImpro }
   >>
   \layout { }
 }
