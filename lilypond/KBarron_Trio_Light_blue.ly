@@ -18,8 +18,7 @@ upper = \relative c' {
 
   \repeat volta 2 {
     \partial 4 ees4 | e4 b' a e |
-    < b a >4 \autoBeamOff < bes g >2 r8 ees8 \autoBeamOn |
-    e4 b' a e |
+    b4 bes2 r8 ees8 | e4 b' a e |
     < a, g > 4 < aes f >2 r4 |
     \acciaccatura { bes16 aes ges } g2 < c b' >2~ |
     < c b' >4 a'8 g e c a g |
@@ -65,15 +64,47 @@ upper = \relative c' {
   b'8 e, d' b c a e c | g' < b, cis >~ q4 r r8 gis' |
 
   a gis a gis a f c b | b4 < b gis' >8 < bes g'>~ q4. gis'8 |
-  a gis a gis a e c a | e'2 \acciaccatura { c16 b bes a } gis4. fis8 |
+  a gis a gis a e c a | e'4  c16 b bes a  gis4. fis8|
 
   g2. g8 gis | a b c d e g b d |
   c e, gis b  a e c b | g' < b, cis >~ q4 r4 r8 aes' |
 
-  a4 e' d8 c a f | c2  b2
+  a4 <e e'> d'8 c a f | c4. b8~ b2 |
+  r8 ees8  e b' a e c a | e'4  c16 b bes a gis4. fis8 |
 
+  g2 \tuplet 3/2 { r4 e' f } |
+  \tuplet 3/2 { gis a b } \tuplet 3/2 {c e, < e c' e>}~ |
+  \tuplet 3/2 { q4 < b' d > < a c > } \tuplet 3/2 { < e b' > a < ees a des > }~ |
 
+  q4 a8 es < d fis c' >4. ees8 | e4 b' a c, | b4. bes8~ bes2 |
+  r8 ees8  e b' a e c a | e'4  c16 b bes a gis4. fis8 |
 
+  g2 r4 \tuplet 2/2 { a8 b } | c e g c, b' gis a b |
+  c4 b8 d c a e c | g' <b, cis>~ q4 <bes e>4. aes'8 |
+
+  a8 e' c d a f c bes | b d f aes e c aes \parenthesize e |
+  a'4 e8 c8 g' f \acciaccatura { e16 f } e8 d | c bes a g aes f g f |
+
+  e4 < c' b' >2.~ | q4 a'8 g e d a g |
+  fis e' c a fis f d' < b~ cis~ >8 | < b~ cis~ >2 r4 ees4
+
+  e4 b' a e |
+  b4 \autoBeamOff bes2 r8 ees8 \autoBeamOn |
+  e4 b' a e |
+  < a, g > 4 < aes f >2 r4 |
+  \acciaccatura { bes16 aes ges } g2 < c b' >2~ |
+  < c b' >4 a'8 g e c a g |
+  fis e' c a fis f < b~ cis~ >4 |
+  < b~ cis~ >4 r2 ees4 |
+
+  e4 b' \tuplet 3/2 {r4 a e} |
+  b4 bes2 ees4  |
+  e4 b' a e  |
+  a,4  aes2 r4 |
+  \acciaccatura { bes16 aes ges } g2 < c b' >2~ |
+  < c b' >4 a'8 g e c a g |
+  fis e' c a fis f < b~ cis~ >4 |
+   < b~ cis~ >4 r2. \bar "|."
 }
 
 lower = \relative c, {
@@ -82,10 +113,9 @@ lower = \relative c, {
   \time 4/4
 
   % Theme repeated 4 times with variations
-
   \repeat volta 2 {
     \partial 4 r4 | < f c' a' >1 |
-    < f c' >4 < c e'>2 r4 |
+    < g f' >4 < c, e'>2 r4 |
     f4 c' a'~ 4  |
     < f, e' >4 < bes, d' >2 r4  | \break
 
@@ -154,6 +184,40 @@ lower = \relative c, {
   r1 | r1 |
   r1 | r1 | \break
 
+  r1 | r1 |
+  r1 | r1 | \break
+
+  r1 | r1 |
+  r1 | r1 | \break
+
+  r1 | r1 |
+  r1 | r1 | \break
+
+  r1 | r1 |
+  r1 | r1 | \break
+
+  r1 | r1 |
+  r1 | r1 | \break
+
+  < f c' a' >1 |
+  < g f' >4 < c, e'>2 r4 |
+  f4 c' a'~ 4  |
+  < f, e' >4 < bes, d' >2 r4  | \break
+
+  c4 g' e'2 |
+  a,8 <e' c'>8~ < e c'>2. |
+  r8 < d, a' fis' >4. r2  |
+  r4 g4-- g2-- | \break
+
+  < f c' a' >1|
+  < f dis' >4 < ges e'>2. |
+  < f c' a' >1 |
+  < ges e' >4 < f dis' >2 r4  | \break
+
+  c4 g' e'4. e8 |
+  a,8 e' g2 r4 |
+   < d, a' >2 r2  |
+  \tuplet 3/2 {r4 < cis, gis >4 q4} q2-- |
 }
 
 \score {
